@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TATS - Time and Attendance Tracking System</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230078d7'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-size='28' font-family='Montserrat,Arial,sans-serif' font-weight='bold' fill='white'%3ETATS%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(-45deg, #0078d7, #6ec6ff, #0078d7, #4fa3e3);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2); /* Darkens background slightly */
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.92); /* More solid white background */
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 48px 36px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo-circle {
+      background: linear-gradient(135deg, #0078d7 60%, #6ec6ff 100%);
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 4px 16px rgba(0, 120, 215, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-circle:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-text {
+      color: #fff;
+      font-size: 2.3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .main-title {
+      color: #0078d7;
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #444;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    .desc {
+      color: #333;
+      font-size: 1rem;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #0078d7, #00b4ff);
+      color: white;
+      padding: 14px 38px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0, 120, 215, 0.3);
+      transition: background 0.25s, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #005fa3, #4fa3e3);
+      transform: scale(1.04);
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 20px;
+      }
+      .main-title {
+        font-size: 1.6rem;
+      }
+      .desc {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div> <!-- Background dimming layer -->
+
+  <div class="container">
+    <div class="logo-circle">
+      <span class="logo-text">TATS</span>
+    </div>
+    <div class="main-title">Time and Attendance Tracking System</div>
+    <div class="subtitle">Welcome!</div>
+    <div class="desc">
+      Manage employee attendance effortlessly, track work hours, and generate insightful reports. <br>
+      Make workforce management efficient with <strong>TATS</strong>.
+    </div>
+    <a href="html/landing.html" class="btn">Get Started</a>
+  </div>
+</body>
+</html>
