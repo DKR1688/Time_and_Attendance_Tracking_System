@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
   <br />
     <a href="#" target="_blank">
       <img src="./nonRelatedAssets/preview.png" alt="Employee Attendance System">
@@ -256,4 +256,4 @@ git push origin feature-name
 
 - **Contributions:** Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
 
-- **Feedback:** If you have any feedback or suggestions, I would love to hear from you. Reach out via the contact form on the portfolio or open an issue on GitHub.
+- **Feedback:** If you have any feedback or suggestions, I would love to hear from you. Reach out via the contact form on the portfolio or open an issue on GitHub. -->
