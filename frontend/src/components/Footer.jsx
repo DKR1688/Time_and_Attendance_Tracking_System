@@ -18,6 +18,7 @@ const Footer = () => {
           </div>
           <p className="footer-description">
             &copy; {currentYear} All rights reserved.
+            <br/> Deepak Kumar Rajput
           </p>
         </div>
 
